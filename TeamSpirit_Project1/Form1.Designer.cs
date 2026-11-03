@@ -1,0 +1,443 @@
+﻿namespace TeamSpirit_Project1
+{
+    partial class Form1
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.initializations_box = new System.Windows.Forms.GroupBox();
+            this.nameBox2 = new System.Windows.Forms.TextBox();
+            this.nameBox1 = new System.Windows.Forms.TextBox();
+            this.playerlabel2 = new System.Windows.Forms.Label();
+            this.playerlabel1 = new System.Windows.Forms.Label();
+            this.Rounds = new System.Windows.Forms.DomainUpDown();
+            this.Round_label = new System.Windows.Forms.Label();
+            this.avatar_box = new System.Windows.Forms.GroupBox();
+            this.buttonsmurf = new System.Windows.Forms.RadioButton();
+            this.buttonbird = new System.Windows.Forms.RadioButton();
+            this.buttonshrek = new System.Windows.Forms.RadioButton();
+            this.buttonlion = new System.Windows.Forms.RadioButton();
+            this.picture_smurf = new System.Windows.Forms.PictureBox();
+            this.picture_bird = new System.Windows.Forms.PictureBox();
+            this.picture_shrek = new System.Windows.Forms.PictureBox();
+            this.picture_lion = new System.Windows.Forms.PictureBox();
+            this.first_player_box = new System.Windows.Forms.GroupBox();
+            this.second_player_box = new System.Windows.Forms.GroupBox();
+            this.button_setup_player1 = new System.Windows.Forms.Button();
+            this.button_setup_player2 = new System.Windows.Forms.Button();
+            this.button_reset = new System.Windows.Forms.Button();
+            this.button_start = new System.Windows.Forms.Button();
+            this.label_report = new System.Windows.Forms.Label();
+            this.button_result = new System.Windows.Forms.Button();
+            this.action_box = new System.Windows.Forms.GroupBox();
+            this.label_round_action = new System.Windows.Forms.Label();
+            this.count_label = new System.Windows.Forms.Label();
+            this.report = new System.Windows.Forms.ListBox();
+            this.player_name_text = new System.Windows.Forms.TextBox();
+            this.button_roll = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.initializations_box.SuspendLayout();
+            this.avatar_box.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_smurf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_bird)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_shrek)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_lion)).BeginInit();
+            this.action_box.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // initializations_box
+            // 
+            this.initializations_box.Controls.Add(this.nameBox2);
+            this.initializations_box.Controls.Add(this.nameBox1);
+            this.initializations_box.Controls.Add(this.playerlabel2);
+            this.initializations_box.Controls.Add(this.playerlabel1);
+            this.initializations_box.Controls.Add(this.Rounds);
+            this.initializations_box.Controls.Add(this.Round_label);
+            this.initializations_box.Location = new System.Drawing.Point(63, 99);
+            this.initializations_box.Name = "initializations_box";
+            this.initializations_box.Size = new System.Drawing.Size(418, 212);
+            this.initializations_box.TabIndex = 0;
+            this.initializations_box.TabStop = false;
+            this.initializations_box.Text = "Initializations";
+            // 
+            // nameBox2
+            // 
+            this.nameBox2.Location = new System.Drawing.Point(201, 132);
+            this.nameBox2.Name = "nameBox2";
+            this.nameBox2.Size = new System.Drawing.Size(173, 26);
+            this.nameBox2.TabIndex = 5;
+            // 
+            // nameBox1
+            // 
+            this.nameBox1.Location = new System.Drawing.Point(201, 87);
+            this.nameBox1.Name = "nameBox1";
+            this.nameBox1.Size = new System.Drawing.Size(173, 26);
+            this.nameBox1.TabIndex = 4;
+            // 
+            // playerlabel2
+            // 
+            this.playerlabel2.AutoSize = true;
+            this.playerlabel2.Location = new System.Drawing.Point(6, 138);
+            this.playerlabel2.Name = "playerlabel2";
+            this.playerlabel2.Size = new System.Drawing.Size(157, 20);
+            this.playerlabel2.TabIndex = 3;
+            this.playerlabel2.Text = "Second Player Name";
+            // 
+            // playerlabel1
+            // 
+            this.playerlabel1.AutoSize = true;
+            this.playerlabel1.Location = new System.Drawing.Point(6, 93);
+            this.playerlabel1.Name = "playerlabel1";
+            this.playerlabel1.Size = new System.Drawing.Size(133, 20);
+            this.playerlabel1.TabIndex = 2;
+            this.playerlabel1.Text = "First Player Name";
+            // 
+            // Rounds
+            // 
+            this.Rounds.Location = new System.Drawing.Point(153, 46);
+            this.Rounds.Name = "Rounds";
+            this.Rounds.Size = new System.Drawing.Size(58, 26);
+            this.Rounds.TabIndex = 1;
+            // 
+            // Round_label
+            // 
+            this.Round_label.AutoSize = true;
+            this.Round_label.Location = new System.Drawing.Point(6, 46);
+            this.Round_label.Name = "Round_label";
+            this.Round_label.Size = new System.Drawing.Size(65, 20);
+            this.Round_label.TabIndex = 0;
+            this.Round_label.Text = "Rounds";
+            // 
+            // avatar_box
+            // 
+            this.avatar_box.Controls.Add(this.buttonsmurf);
+            this.avatar_box.Controls.Add(this.buttonbird);
+            this.avatar_box.Controls.Add(this.buttonshrek);
+            this.avatar_box.Controls.Add(this.buttonlion);
+            this.avatar_box.Controls.Add(this.picture_smurf);
+            this.avatar_box.Controls.Add(this.picture_bird);
+            this.avatar_box.Controls.Add(this.picture_shrek);
+            this.avatar_box.Controls.Add(this.picture_lion);
+            this.avatar_box.Location = new System.Drawing.Point(503, 99);
+            this.avatar_box.Name = "avatar_box";
+            this.avatar_box.Size = new System.Drawing.Size(213, 426);
+            this.avatar_box.TabIndex = 1;
+            this.avatar_box.TabStop = false;
+            this.avatar_box.Text = "Avatars";
+            // 
+            // buttonsmurf
+            // 
+            this.buttonsmurf.AutoSize = true;
+            this.buttonsmurf.Location = new System.Drawing.Point(34, 357);
+            this.buttonsmurf.Name = "buttonsmurf";
+            this.buttonsmurf.Size = new System.Drawing.Size(21, 20);
+            this.buttonsmurf.TabIndex = 7;
+            this.buttonsmurf.TabStop = true;
+            this.buttonsmurf.UseVisualStyleBackColor = true;
+            // 
+            // buttonbird
+            // 
+            this.buttonbird.AutoSize = true;
+            this.buttonbird.Location = new System.Drawing.Point(34, 257);
+            this.buttonbird.Name = "buttonbird";
+            this.buttonbird.Size = new System.Drawing.Size(21, 20);
+            this.buttonbird.TabIndex = 6;
+            this.buttonbird.TabStop = true;
+            this.buttonbird.UseVisualStyleBackColor = true;
+            // 
+            // buttonshrek
+            // 
+            this.buttonshrek.AutoSize = true;
+            this.buttonshrek.Location = new System.Drawing.Point(34, 165);
+            this.buttonshrek.Name = "buttonshrek";
+            this.buttonshrek.Size = new System.Drawing.Size(21, 20);
+            this.buttonshrek.TabIndex = 5;
+            this.buttonshrek.TabStop = true;
+            this.buttonshrek.UseVisualStyleBackColor = true;
+            // 
+            // buttonlion
+            // 
+            this.buttonlion.AutoSize = true;
+            this.buttonlion.Location = new System.Drawing.Point(34, 63);
+            this.buttonlion.Name = "buttonlion";
+            this.buttonlion.Size = new System.Drawing.Size(21, 20);
+            this.buttonlion.TabIndex = 4;
+            this.buttonlion.TabStop = true;
+            this.buttonlion.UseVisualStyleBackColor = true;
+            // 
+            // picture_smurf
+            // 
+            this.picture_smurf.Image = ((System.Drawing.Image)(resources.GetObject("picture_smurf.Image")));
+            this.picture_smurf.Location = new System.Drawing.Point(104, 336);
+            this.picture_smurf.Name = "picture_smurf";
+            this.picture_smurf.Size = new System.Drawing.Size(81, 67);
+            this.picture_smurf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_smurf.TabIndex = 3;
+            this.picture_smurf.TabStop = false;
+            // 
+            // picture_bird
+            // 
+            this.picture_bird.Image = ((System.Drawing.Image)(resources.GetObject("picture_bird.Image")));
+            this.picture_bird.Location = new System.Drawing.Point(104, 236);
+            this.picture_bird.Name = "picture_bird";
+            this.picture_bird.Size = new System.Drawing.Size(81, 67);
+            this.picture_bird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_bird.TabIndex = 2;
+            this.picture_bird.TabStop = false;
+            // 
+            // picture_shrek
+            // 
+            this.picture_shrek.Image = ((System.Drawing.Image)(resources.GetObject("picture_shrek.Image")));
+            this.picture_shrek.Location = new System.Drawing.Point(104, 138);
+            this.picture_shrek.Name = "picture_shrek";
+            this.picture_shrek.Size = new System.Drawing.Size(81, 67);
+            this.picture_shrek.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_shrek.TabIndex = 1;
+            this.picture_shrek.TabStop = false;
+            // 
+            // picture_lion
+            // 
+            this.picture_lion.Image = ((System.Drawing.Image)(resources.GetObject("picture_lion.Image")));
+            this.picture_lion.Location = new System.Drawing.Point(104, 35);
+            this.picture_lion.Name = "picture_lion";
+            this.picture_lion.Size = new System.Drawing.Size(81, 78);
+            this.picture_lion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_lion.TabIndex = 0;
+            this.picture_lion.TabStop = false;
+            // 
+            // first_player_box
+            // 
+            this.first_player_box.Location = new System.Drawing.Point(731, 99);
+            this.first_player_box.Name = "first_player_box";
+            this.first_player_box.Size = new System.Drawing.Size(302, 225);
+            this.first_player_box.TabIndex = 2;
+            this.first_player_box.TabStop = false;
+            this.first_player_box.Text = "First Player";
+            // 
+            // second_player_box
+            // 
+            this.second_player_box.Location = new System.Drawing.Point(731, 377);
+            this.second_player_box.Name = "second_player_box";
+            this.second_player_box.Size = new System.Drawing.Size(302, 225);
+            this.second_player_box.TabIndex = 3;
+            this.second_player_box.TabStop = false;
+            this.second_player_box.Text = "Second Player";
+            // 
+            // button_setup_player1
+            // 
+            this.button_setup_player1.Location = new System.Drawing.Point(503, 547);
+            this.button_setup_player1.Name = "button_setup_player1";
+            this.button_setup_player1.Size = new System.Drawing.Size(213, 55);
+            this.button_setup_player1.TabIndex = 4;
+            this.button_setup_player1.Text = "Set Up First Player";
+            this.button_setup_player1.UseVisualStyleBackColor = true;
+            // 
+            // button_setup_player2
+            // 
+            this.button_setup_player2.Location = new System.Drawing.Point(503, 620);
+            this.button_setup_player2.Name = "button_setup_player2";
+            this.button_setup_player2.Size = new System.Drawing.Size(213, 55);
+            this.button_setup_player2.TabIndex = 5;
+            this.button_setup_player2.Text = "Set Up Second Player";
+            this.button_setup_player2.UseVisualStyleBackColor = true;
+            // 
+            // button_reset
+            // 
+            this.button_reset.Location = new System.Drawing.Point(503, 697);
+            this.button_reset.Name = "button_reset";
+            this.button_reset.Size = new System.Drawing.Size(213, 55);
+            this.button_reset.TabIndex = 6;
+            this.button_reset.Text = "RESET ALL";
+            this.button_reset.UseVisualStyleBackColor = true;
+            // 
+            // button_start
+            // 
+            this.button_start.Location = new System.Drawing.Point(731, 620);
+            this.button_start.Name = "button_start";
+            this.button_start.Size = new System.Drawing.Size(302, 132);
+            this.button_start.TabIndex = 7;
+            this.button_start.Text = "START";
+            this.button_start.UseVisualStyleBackColor = true;
+            // 
+            // label_report
+            // 
+            this.label_report.AutoSize = true;
+            this.label_report.Location = new System.Drawing.Point(1066, 99);
+            this.label_report.Name = "label_report";
+            this.label_report.Size = new System.Drawing.Size(58, 20);
+            this.label_report.TabIndex = 8;
+            this.label_report.Text = "Report";
+            // 
+            // button_result
+            // 
+            this.button_result.Location = new System.Drawing.Point(1054, 620);
+            this.button_result.Name = "button_result";
+            this.button_result.Size = new System.Drawing.Size(302, 132);
+            this.button_result.TabIndex = 10;
+            this.button_result.Text = "SHOW RESULT";
+            this.button_result.UseVisualStyleBackColor = true;
+            // 
+            // action_box
+            // 
+            this.action_box.Controls.Add(this.pictureBox1);
+            this.action_box.Controls.Add(this.button_roll);
+            this.action_box.Controls.Add(this.player_name_text);
+            this.action_box.Controls.Add(this.count_label);
+            this.action_box.Controls.Add(this.label_round_action);
+            this.action_box.Location = new System.Drawing.Point(63, 335);
+            this.action_box.Name = "action_box";
+            this.action_box.Size = new System.Drawing.Size(418, 417);
+            this.action_box.TabIndex = 11;
+            this.action_box.TabStop = false;
+            this.action_box.Text = "Action";
+            // 
+            // label_round_action
+            // 
+            this.label_round_action.AutoSize = true;
+            this.label_round_action.Location = new System.Drawing.Point(6, 47);
+            this.label_round_action.Name = "label_round_action";
+            this.label_round_action.Size = new System.Drawing.Size(57, 20);
+            this.label_round_action.TabIndex = 0;
+            this.label_round_action.Text = "Round";
+            // 
+            // count_label
+            // 
+            this.count_label.AutoSize = true;
+            this.count_label.Location = new System.Drawing.Point(249, 46);
+            this.count_label.Name = "count_label";
+            this.count_label.Size = new System.Drawing.Size(18, 20);
+            this.count_label.TabIndex = 1;
+            this.count_label.Text = "0";
+            // 
+            // report
+            // 
+            this.report.FormattingEnabled = true;
+            this.report.ItemHeight = 20;
+            this.report.Location = new System.Drawing.Point(1054, 122);
+            this.report.Name = "report";
+            this.report.Size = new System.Drawing.Size(302, 484);
+            this.report.TabIndex = 9;
+            // 
+            // player_name_text
+            // 
+            this.player_name_text.BackColor = System.Drawing.SystemColors.MenuText;
+            this.player_name_text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.player_name_text.ForeColor = System.Drawing.SystemColors.InactiveBorder;
+            this.player_name_text.Location = new System.Drawing.Point(10, 154);
+            this.player_name_text.Name = "player_name_text";
+            this.player_name_text.Size = new System.Drawing.Size(257, 26);
+            this.player_name_text.TabIndex = 2;
+            // 
+            // button_roll
+            // 
+            this.button_roll.Location = new System.Drawing.Point(7, 200);
+            this.button_roll.Name = "button_roll";
+            this.button_roll.Size = new System.Drawing.Size(402, 36);
+            this.button_roll.TabIndex = 3;
+            this.button_roll.Text = "ROLL";
+            this.button_roll.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(134, 261);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(145, 129);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1916, 1027);
+            this.Controls.Add(this.action_box);
+            this.Controls.Add(this.button_result);
+            this.Controls.Add(this.report);
+            this.Controls.Add(this.label_report);
+            this.Controls.Add(this.button_start);
+            this.Controls.Add(this.button_reset);
+            this.Controls.Add(this.button_setup_player2);
+            this.Controls.Add(this.button_setup_player1);
+            this.Controls.Add(this.second_player_box);
+            this.Controls.Add(this.first_player_box);
+            this.Controls.Add(this.avatar_box);
+            this.Controls.Add(this.initializations_box);
+            this.Name = "Form1";
+            this.Text = "Form1";
+            this.initializations_box.ResumeLayout(false);
+            this.initializations_box.PerformLayout();
+            this.avatar_box.ResumeLayout(false);
+            this.avatar_box.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_smurf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_bird)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_shrek)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_lion)).EndInit();
+            this.action_box.ResumeLayout(false);
+            this.action_box.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.GroupBox initializations_box;
+        private System.Windows.Forms.Label playerlabel1;
+        private System.Windows.Forms.DomainUpDown Rounds;
+        private System.Windows.Forms.Label Round_label;
+        private System.Windows.Forms.Label playerlabel2;
+        private System.Windows.Forms.TextBox nameBox2;
+        private System.Windows.Forms.TextBox nameBox1;
+        private System.Windows.Forms.GroupBox avatar_box;
+        private System.Windows.Forms.PictureBox picture_smurf;
+        private System.Windows.Forms.PictureBox picture_bird;
+        private System.Windows.Forms.PictureBox picture_shrek;
+        private System.Windows.Forms.PictureBox picture_lion;
+        private System.Windows.Forms.RadioButton buttonsmurf;
+        private System.Windows.Forms.RadioButton buttonbird;
+        private System.Windows.Forms.RadioButton buttonshrek;
+        private System.Windows.Forms.RadioButton buttonlion;
+        private System.Windows.Forms.GroupBox first_player_box;
+        private System.Windows.Forms.GroupBox second_player_box;
+        private System.Windows.Forms.Button button_setup_player1;
+        private System.Windows.Forms.Button button_setup_player2;
+        private System.Windows.Forms.Button button_reset;
+        private System.Windows.Forms.Button button_start;
+        private System.Windows.Forms.Label label_report;
+        private System.Windows.Forms.Button button_result;
+        private System.Windows.Forms.GroupBox action_box;
+        private System.Windows.Forms.Label count_label;
+        private System.Windows.Forms.Label label_round_action;
+        private System.Windows.Forms.TextBox player_name_text;
+        private System.Windows.Forms.ListBox report;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button_roll;
+    }
+}
+
