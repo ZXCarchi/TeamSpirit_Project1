@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.initializations_box = new System.Windows.Forms.GroupBox();
             this.nameBox2 = new System.Windows.Forms.TextBox();
             this.nameBox1 = new System.Windows.Forms.TextBox();
@@ -41,12 +40,11 @@
             this.buttonbird = new System.Windows.Forms.RadioButton();
             this.buttonshrek = new System.Windows.Forms.RadioButton();
             this.buttonlion = new System.Windows.Forms.RadioButton();
-            this.picture_smurf = new System.Windows.Forms.PictureBox();
-            this.picture_bird = new System.Windows.Forms.PictureBox();
-            this.picture_shrek = new System.Windows.Forms.PictureBox();
-            this.picture_lion = new System.Windows.Forms.PictureBox();
             this.first_player_box = new System.Windows.Forms.GroupBox();
+            this.label_point_count = new System.Windows.Forms.Label();
+            this.label_point = new System.Windows.Forms.Label();
             this.second_player_box = new System.Windows.Forms.GroupBox();
+            this.label_point_count2 = new System.Windows.Forms.Label();
             this.button_setup_player1 = new System.Windows.Forms.Button();
             this.button_setup_player2 = new System.Windows.Forms.Button();
             this.button_reset = new System.Windows.Forms.Button();
@@ -62,12 +60,16 @@
             this.report = new System.Windows.Forms.ListBox();
             this.initializations_box.SuspendLayout();
             this.avatar_box.SuspendLayout();
+            this.first_player_box.SuspendLayout();
+            this.second_player_box.SuspendLayout();
+            this.action_box.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_dice)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_def_icon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_smurf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_bird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_shrek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_lion)).BeginInit();
-            this.action_box.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // initializations_box
@@ -263,6 +265,25 @@
             this.first_player_box.TabStop = false;
             this.first_player_box.Text = "First Player";
             // 
+            // label_point_count
+            // 
+            this.label_point_count.AutoSize = true;
+            this.label_point_count.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_point_count.Location = new System.Drawing.Point(184, 94);
+            this.label_point_count.Name = "label_point_count";
+            this.label_point_count.Size = new System.Drawing.Size(83, 91);
+            this.label_point_count.TabIndex = 2;
+            this.label_point_count.Text = "0";
+            // 
+            // label_point
+            // 
+            this.label_point.AutoSize = true;
+            this.label_point.Location = new System.Drawing.Point(180, 46);
+            this.label_point.Name = "label_point";
+            this.label_point.Size = new System.Drawing.Size(45, 20);
+            this.label_point.TabIndex = 1;
+            this.label_point.Text = "Point";
+            // 
             // second_player_box
             // 
             this.second_player_box.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -274,6 +295,16 @@
             this.second_player_box.TabIndex = 3;
             this.second_player_box.TabStop = false;
             this.second_player_box.Text = "Second Player";
+            // 
+            // label_point_count2
+            // 
+            this.label_point_count2.AutoSize = true;
+            this.label_point_count2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_point_count2.Location = new System.Drawing.Point(184, 93);
+            this.label_point_count2.Name = "label_point_count2";
+            this.label_point_count2.Size = new System.Drawing.Size(83, 91);
+            this.label_point_count2.TabIndex = 3;
+            this.label_point_count2.Text = "0";
             // 
             // button_setup_player1
             // 
@@ -339,7 +370,7 @@
             // 
             // action_box
             // 
-            this.action_box.Controls.Add(this.pictureBox1);
+            this.action_box.Controls.Add(this.picture_dice);
             this.action_box.Controls.Add(this.button_roll);
             this.action_box.Controls.Add(this.player_name_text);
             this.action_box.Controls.Add(this.count_label);
@@ -372,7 +403,7 @@
             this.button_roll.Text = "ROLL";
             this.button_roll.UseVisualStyleBackColor = true;
             // 
-            // player_name_text
+            // label_point2
             // 
             this.player_name_text.BackColor = System.Drawing.SystemColors.MenuText;
             this.player_name_text.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -413,6 +444,56 @@
             this.report.TabIndex = 9;
             this.report.SelectedIndexChanged += new System.EventHandler(this.report_SelectedIndexChanged);
             // 
+            // picture_def_icon
+            // 
+            this.picture_def_icon.Image = global::TeamSpirit_Project1.Properties.Resources._default;
+            this.picture_def_icon.Location = new System.Drawing.Point(20, 48);
+            this.picture_def_icon.Name = "picture_def_icon";
+            this.picture_def_icon.Size = new System.Drawing.Size(140, 137);
+            this.picture_def_icon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_def_icon.TabIndex = 0;
+            this.picture_def_icon.TabStop = false;
+            // 
+            // picture_smurf
+            // 
+            this.picture_smurf.Image = global::TeamSpirit_Project1.Properties.Resources.Icon04;
+            this.picture_smurf.Location = new System.Drawing.Point(104, 336);
+            this.picture_smurf.Name = "picture_smurf";
+            this.picture_smurf.Size = new System.Drawing.Size(81, 67);
+            this.picture_smurf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_smurf.TabIndex = 3;
+            this.picture_smurf.TabStop = false;
+            // 
+            // picture_bird
+            // 
+            this.picture_bird.Image = global::TeamSpirit_Project1.Properties.Resources.Icon03;
+            this.picture_bird.Location = new System.Drawing.Point(104, 236);
+            this.picture_bird.Name = "picture_bird";
+            this.picture_bird.Size = new System.Drawing.Size(81, 67);
+            this.picture_bird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_bird.TabIndex = 2;
+            this.picture_bird.TabStop = false;
+            // 
+            // picture_shrek
+            // 
+            this.picture_shrek.Image = global::TeamSpirit_Project1.Properties.Resources.Icon02;
+            this.picture_shrek.Location = new System.Drawing.Point(104, 138);
+            this.picture_shrek.Name = "picture_shrek";
+            this.picture_shrek.Size = new System.Drawing.Size(81, 67);
+            this.picture_shrek.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_shrek.TabIndex = 1;
+            this.picture_shrek.TabStop = false;
+            // 
+            // picture_lion
+            // 
+            this.picture_lion.Image = global::TeamSpirit_Project1.Properties.Resources.Icon01;
+            this.picture_lion.Location = new System.Drawing.Point(104, 35);
+            this.picture_lion.Name = "picture_lion";
+            this.picture_lion.Size = new System.Drawing.Size(81, 78);
+            this.picture_lion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picture_lion.TabIndex = 0;
+            this.picture_lion.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -437,13 +518,19 @@
             this.initializations_box.PerformLayout();
             this.avatar_box.ResumeLayout(false);
             this.avatar_box.PerformLayout();
+            this.first_player_box.ResumeLayout(false);
+            this.first_player_box.PerformLayout();
+            this.second_player_box.ResumeLayout(false);
+            this.second_player_box.PerformLayout();
+            this.action_box.ResumeLayout(false);
+            this.action_box.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_dice)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture_def_icon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_smurf)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_bird)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_shrek)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_lion)).EndInit();
-            this.action_box.ResumeLayout(false);
-            this.action_box.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -480,8 +567,14 @@
         private System.Windows.Forms.Label label_round_action;
         private System.Windows.Forms.TextBox player_name_text;
         private System.Windows.Forms.ListBox report;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picture_dice;
         private System.Windows.Forms.Button button_roll;
+        private System.Windows.Forms.Label label_point;
+        private System.Windows.Forms.PictureBox picture_def_icon;
+        private System.Windows.Forms.Label label_point_count;
+        private System.Windows.Forms.Label label_point_count2;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label_point2;
     }
 }
 
