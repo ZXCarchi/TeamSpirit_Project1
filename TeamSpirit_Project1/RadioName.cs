@@ -13,8 +13,6 @@ namespace TeamSpirit_Project1
     internal class RadioName
     {
         public Control radioBtn;
-
-        public Control radioChecked;
         public PictureBox pictureBox;
 
 

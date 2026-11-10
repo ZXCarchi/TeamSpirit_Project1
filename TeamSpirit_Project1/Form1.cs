@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -25,9 +25,6 @@ namespace TeamSpirit_Project1
         string listHistory;
 
         // Changing the first player's label name
-
-        string listHistory;
-
         private void nameBox1_TextChanged_1(object sender, EventArgs e)
         {
             first_player_box.Text = nameBox1.Text;
@@ -52,7 +49,6 @@ namespace TeamSpirit_Project1
         private void button_setup_player2_Click_1(object sender, EventArgs e)
         {
             radioForEach(nameBox2, pictureBox1, button_setup_player2); // adding the element's name
-            radioForEach(nameBox2, pictureBox1, button_setup_player2); 
         }
 
 
@@ -86,11 +82,6 @@ namespace TeamSpirit_Project1
                     // adding round
                     count_label.Text = Rounds.Text;
                     firstplayer = !firstplayer; // have to do that in order to display players name correctly and queue too
-                }
-                    button_start.Enabled = false;
-                    button_roll.Enabled = true;
-                    count_label.Text = Rounds.Text;
-                    firstplayer = !firstplayer; 
                 } 
             }
             catch
@@ -107,15 +98,6 @@ namespace TeamSpirit_Project1
 
         int playerWinCount; // for the temporary compare
         int playerWinCount2; // for the temporary compare
-        
-        int countNumber;
-        int secondPlayerCount = 0;
-        int firstPlayerCount = 0;
-        bool firstplayer = true;
-
-
-        int playerWinCount; 
-        int playerWinCount2; 
         private void button_roll_Click(object sender, EventArgs e)
         {
             countNumber = Convert.ToInt32(count_label.Text);
@@ -134,9 +116,7 @@ namespace TeamSpirit_Project1
             if (string.IsNullOrEmpty(listHistory))
             {
                 MessageBox.Show("No history");
-            }
-            else
-            {
+            } else{
                 report.AppendText(listHistory);
             }
 
@@ -149,14 +129,6 @@ namespace TeamSpirit_Project1
         {
 
             // until round is not 0
-            } else{
-                report.AppendText(listHistory);
-            }
-
-        }        
-        void whichPlayer(bool player, Control playerNameText, Control nameBox, Control nameboxSecond, ref int rounds, Control countLabel)
-        {
-
             if (rounds != 0)
             {
 
@@ -263,7 +235,6 @@ namespace TeamSpirit_Project1
 
                         default:
                             // code block
-
                             break;
                     }
                     label_point_count.Text = secondPlayerCount.ToString();
@@ -273,18 +244,17 @@ namespace TeamSpirit_Project1
 
             else
             {
-                if (playerWinCount < playerWinCount2)
+                if (secondPlayerCount > firstPlayerCount)
                 {
                     MessageBox.Show("The game is over, the winner is: " + nameBox1.Text);
                 }
-
-                else if (playerWinCount > playerWinCount2)
+                else if (secondPlayerCount < firstPlayerCount)
                 {
                     MessageBox.Show("The game is over, the winner is: " + nameBox2.Text);
                 }
                 else
                 {
-                    MessageBox.Show("It was DRAW");
+                    MessageBox.Show("Draw");
                 }
 
             }
@@ -323,7 +293,6 @@ namespace TeamSpirit_Project1
             picture_dice.Image = null;
 
             foreach (Control control in avatar_box.Controls) // Deleting the selected radioButtons
-            foreach (Control control in avatar_box.Controls) 
             {
                 if (control is System.Windows.Forms.RadioButton)
                 {
@@ -333,10 +302,6 @@ namespace TeamSpirit_Project1
                     {
                         radioButton.Checked = false; // deactivating the active radioButton
                         radioButton.Enabled = true; // Enabling it
-                    if (radioButton.Checked || !radioButton.Enabled) 
-                    {
-                        radioButton.Checked = false; 
-                        radioButton.Enabled = true; 
                     }
                 }
             }
@@ -346,7 +311,6 @@ namespace TeamSpirit_Project1
         void radioForEach(Control nameBox, PictureBox pictureBox, Control button_setup_player)
         {
             // at first, we are checking if the nameBox is empty or not
-
             if (string.IsNullOrEmpty(nameBox.Text))
             {
                 MessageBox.Show("Player's name is empty");
@@ -354,7 +318,6 @@ namespace TeamSpirit_Project1
             else
             {
                 foreach (Control control in avatar_box.Controls) // First we are going throught avatar_box div
-                foreach (Control control in avatar_box.Controls) 
                 {
                     if (control is System.Windows.Forms.RadioButton)
                     {
@@ -365,9 +328,6 @@ namespace TeamSpirit_Project1
                         if (radioButton.Checked) // if radio button is active
                         {
                             radioButton.Enabled = false; // deactivating the active icon and setup player button
-                        if (radioButton.Checked)
-                        {
-                            radioButton.Enabled = false;
                             button_setup_player1.Enabled = false;
 
                             radioClass.radioBtn = radioButton;
@@ -380,19 +340,12 @@ namespace TeamSpirit_Project1
                 button_setup_player.Enabled = false; // Deactivating the setup buttons
 
                 foreach (Control control in avatar_box.Controls) // Deleting the selected radioButtons
-                nameBox.Enabled = false;
-                button_setup_player.Enabled = false;
-
-                foreach (Control control in avatar_box.Controls)
                 {
                     if (control is System.Windows.Forms.RadioButton)
                     {
                         System.Windows.Forms.RadioButton radioButton = (System.Windows.Forms.RadioButton)control;
 
                         if (radioButton.Checked) // 
-                        {
-                            radioButton.Checked = false;
-                        if (radioButton.Checked)
                         {
                             radioButton.Checked = false; 
                         }
@@ -412,5 +365,11 @@ namespace TeamSpirit_Project1
 
         }
 
+        static void Main()
+        {
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new Form1());
+        }
     }
 }
