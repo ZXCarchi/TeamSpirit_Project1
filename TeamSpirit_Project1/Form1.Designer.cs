@@ -27,7 +27,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.initializations_box = new System.Windows.Forms.GroupBox();
             this.nameBox2 = new System.Windows.Forms.TextBox();
             this.nameBox1 = new System.Windows.Forms.TextBox();
@@ -45,9 +44,6 @@
             this.picture_shrek = new System.Windows.Forms.PictureBox();
             this.picture_lion = new System.Windows.Forms.PictureBox();
             this.first_player_box = new System.Windows.Forms.GroupBox();
-<<<<<<< Updated upstream
-            this.second_player_box = new System.Windows.Forms.GroupBox();
-=======
             this.label_point_count = new System.Windows.Forms.Label();
             this.label_point = new System.Windows.Forms.Label();
             this.picture_def_icon = new System.Windows.Forms.PictureBox();
@@ -55,7 +51,6 @@
             this.label_point2 = new System.Windows.Forms.Label();
             this.label_point_count2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
->>>>>>> Stashed changes
             this.button_setup_player1 = new System.Windows.Forms.Button();
             this.button_setup_player2 = new System.Windows.Forms.Button();
             this.button_reset = new System.Windows.Forms.Button();
@@ -63,38 +58,24 @@
             this.label_report = new System.Windows.Forms.Label();
             this.button_result = new System.Windows.Forms.Button();
             this.action_box = new System.Windows.Forms.GroupBox();
-<<<<<<< Updated upstream
-            this.label_round_action = new System.Windows.Forms.Label();
-            this.count_label = new System.Windows.Forms.Label();
-            this.report = new System.Windows.Forms.ListBox();
-            this.player_name_text = new System.Windows.Forms.TextBox();
-            this.button_roll = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-=======
             this.picture_dice = new System.Windows.Forms.PictureBox();
             this.button_roll = new System.Windows.Forms.Button();
             this.player_name_text = new System.Windows.Forms.TextBox();
             this.count_label = new System.Windows.Forms.Label();
             this.label_round_action = new System.Windows.Forms.Label();
             this.report = new System.Windows.Forms.RichTextBox();
->>>>>>> Stashed changes
             this.initializations_box.SuspendLayout();
             this.avatar_box.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_smurf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_bird)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_shrek)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_lion)).BeginInit();
-<<<<<<< Updated upstream
-            this.action_box.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-=======
             this.first_player_box.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picture_def_icon)).BeginInit()
+            ((System.ComponentModel.ISupportInitialize)(this.picture_def_icon)).BeginInit();
             this.second_player_box.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.action_box.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_dice)).BeginInit();
->>>>>>> Stashed changes
             this.SuspendLayout();
             // 
             // initializations_box
@@ -171,7 +152,7 @@
             this.Round_label.Text = "Rounds";
             // 
             // avatar_box
-            //
+            // 
             this.avatar_box.Controls.Add(this.buttonsmurf);
             this.avatar_box.Controls.Add(this.buttonbird);
             this.avatar_box.Controls.Add(this.buttonshrek);
@@ -234,87 +215,55 @@
             // 
             // picture_smurf
             // 
-<<<<<<< Updated upstream
-            this.picture_smurf.Image = ((System.Drawing.Image)(resources.GetObject("picture_smurf.Image")));
-            this.picture_smurf.Location = new System.Drawing.Point(104, 336);
-            this.picture_smurf.Name = "picture_smurf";
-            this.picture_smurf.Size = new System.Drawing.Size(81, 67);
-=======
             this.picture_smurf.Image = global::TeamSpirit_Project1.Properties.Resources.Icon04;
             this.picture_smurf.Location = new System.Drawing.Point(69, 218);
             this.picture_smurf.Margin = new System.Windows.Forms.Padding(2);
             this.picture_smurf.Name = "picture_smurf";
             this.picture_smurf.Size = new System.Drawing.Size(54, 44);
->>>>>>> Stashed changes
             this.picture_smurf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picture_smurf.TabIndex = 3;
             this.picture_smurf.TabStop = false;
             // 
             // picture_bird
             // 
-<<<<<<< Updated upstream
-            this.picture_bird.Image = ((System.Drawing.Image)(resources.GetObject("picture_bird.Image")));
-            this.picture_bird.Location = new System.Drawing.Point(104, 236);
-            this.picture_bird.Name = "picture_bird";
-            this.picture_bird.Size = new System.Drawing.Size(81, 67);
-=======
             this.picture_bird.Image = global::TeamSpirit_Project1.Properties.Resources.Icon03;
             this.picture_bird.Location = new System.Drawing.Point(69, 153);
             this.picture_bird.Margin = new System.Windows.Forms.Padding(2);
             this.picture_bird.Name = "picture_bird";
             this.picture_bird.Size = new System.Drawing.Size(54, 44);
->>>>>>> Stashed changes
             this.picture_bird.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picture_bird.TabIndex = 2;
             this.picture_bird.TabStop = false;
             // 
             // picture_shrek
             // 
-<<<<<<< Updated upstream
-            this.picture_shrek.Image = ((System.Drawing.Image)(resources.GetObject("picture_shrek.Image")));
-            this.picture_shrek.Location = new System.Drawing.Point(104, 138);
-            this.picture_shrek.Name = "picture_shrek";
-            this.picture_shrek.Size = new System.Drawing.Size(81, 67);
-=======
             this.picture_shrek.Image = global::TeamSpirit_Project1.Properties.Resources.Icon02;
             this.picture_shrek.Location = new System.Drawing.Point(69, 90);
             this.picture_shrek.Margin = new System.Windows.Forms.Padding(2);
             this.picture_shrek.Name = "picture_shrek";
             this.picture_shrek.Size = new System.Drawing.Size(54, 44);
->>>>>>> Stashed changes
             this.picture_shrek.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picture_shrek.TabIndex = 1;
             this.picture_shrek.TabStop = false;
             // 
             // picture_lion
             // 
-<<<<<<< Updated upstream
-            this.picture_lion.Image = ((System.Drawing.Image)(resources.GetObject("picture_lion.Image")));
-            this.picture_lion.Location = new System.Drawing.Point(104, 35);
-            this.picture_lion.Name = "picture_lion";
-            this.picture_lion.Size = new System.Drawing.Size(81, 78);
-=======
             this.picture_lion.Image = global::TeamSpirit_Project1.Properties.Resources.Icon01;
             this.picture_lion.Location = new System.Drawing.Point(69, 23);
             this.picture_lion.Margin = new System.Windows.Forms.Padding(2);
             this.picture_lion.Name = "picture_lion";
             this.picture_lion.Size = new System.Drawing.Size(54, 51);
->>>>>>> Stashed changes
             this.picture_lion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picture_lion.TabIndex = 0;
             this.picture_lion.TabStop = false;
             // 
             // first_player_box
             // 
-<<<<<<< Updated upstream
-            this.first_player_box.Location = new System.Drawing.Point(731, 99);
-=======
             this.first_player_box.Controls.Add(this.label_point_count);
             this.first_player_box.Controls.Add(this.label_point);
             this.first_player_box.Controls.Add(this.picture_def_icon);
             this.first_player_box.Location = new System.Drawing.Point(487, 64);
             this.first_player_box.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> Stashed changes
             this.first_player_box.Name = "first_player_box";
             this.first_player_box.Padding = new System.Windows.Forms.Padding(2);
             this.first_player_box.Size = new System.Drawing.Size(201, 146);
@@ -322,11 +271,6 @@
             this.first_player_box.TabStop = false;
             this.first_player_box.Text = "First Player";
             // 
-<<<<<<< Updated upstream
-            // second_player_box
-            // 
-            this.second_player_box.Location = new System.Drawing.Point(731, 377);
-=======
             // label_point_count
             // 
             this.label_point_count.AutoSize = true;
@@ -367,7 +311,6 @@
             this.second_player_box.Controls.Add(this.pictureBox1);
             this.second_player_box.Location = new System.Drawing.Point(487, 245);
             this.second_player_box.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> Stashed changes
             this.second_player_box.Name = "second_player_box";
             this.second_player_box.Padding = new System.Windows.Forms.Padding(2);
             this.second_player_box.Size = new System.Drawing.Size(201, 146);
@@ -375,8 +318,6 @@
             this.second_player_box.TabStop = false;
             this.second_player_box.Text = "Second Player";
             // 
-<<<<<<< Updated upstream
-=======
             // label_point2
             // 
             this.label_point2.AutoSize = true;
@@ -410,7 +351,6 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
->>>>>>> Stashed changes
             // button_setup_player1
             // 
             this.button_setup_player1.Location = new System.Drawing.Point(335, 356);
@@ -478,7 +418,7 @@
             // 
             // action_box
             // 
-            this.action_box.Controls.Add(this.pictureBox1);
+            this.action_box.Controls.Add(this.picture_dice);
             this.action_box.Controls.Add(this.button_roll);
             this.action_box.Controls.Add(this.player_name_text);
             this.action_box.Controls.Add(this.count_label);
@@ -492,34 +432,6 @@
             this.action_box.TabStop = false;
             this.action_box.Text = "Action";
             // 
-<<<<<<< Updated upstream
-            // label_round_action
-            // 
-            this.label_round_action.AutoSize = true;
-            this.label_round_action.Location = new System.Drawing.Point(6, 47);
-            this.label_round_action.Name = "label_round_action";
-            this.label_round_action.Size = new System.Drawing.Size(57, 20);
-            this.label_round_action.TabIndex = 0;
-            this.label_round_action.Text = "Round";
-            // 
-            // count_label
-            // 
-            this.count_label.AutoSize = true;
-            this.count_label.Location = new System.Drawing.Point(249, 46);
-            this.count_label.Name = "count_label";
-            this.count_label.Size = new System.Drawing.Size(18, 20);
-            this.count_label.TabIndex = 1;
-            this.count_label.Text = "0";
-            // 
-            // report
-            // 
-            this.report.FormattingEnabled = true;
-            this.report.ItemHeight = 20;
-            this.report.Location = new System.Drawing.Point(1054, 122);
-            this.report.Name = "report";
-            this.report.Size = new System.Drawing.Size(302, 484);
-            this.report.TabIndex = 9;
-=======
             // picture_dice
             // 
             this.picture_dice.BackColor = System.Drawing.SystemColors.ButtonFace;
@@ -542,7 +454,6 @@
             this.button_roll.Text = "ROLL";
             this.button_roll.UseVisualStyleBackColor = true;
             this.button_roll.Click += new System.EventHandler(this.button_roll_Click);
->>>>>>> Stashed changes
             // 
             // player_name_text
             // 
@@ -558,24 +469,8 @@
             this.player_name_text.Text = "FirstPlayer\'s Turn";
             this.player_name_text.TextChanged += new System.EventHandler(this.player_name_text_TextChanged);
             // 
-            // button_roll
+            // count_label
             // 
-<<<<<<< Updated upstream
-            this.button_roll.Location = new System.Drawing.Point(7, 200);
-            this.button_roll.Name = "button_roll";
-            this.button_roll.Size = new System.Drawing.Size(402, 36);
-            this.button_roll.TabIndex = 3;
-            this.button_roll.Text = "ROLL";
-            this.button_roll.UseVisualStyleBackColor = true;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(134, 261);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(145, 129);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
-=======
             this.count_label.AutoSize = true;
             this.count_label.Location = new System.Drawing.Point(166, 30);
             this.count_label.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -601,7 +496,6 @@
             this.report.Size = new System.Drawing.Size(201, 316);
             this.report.TabIndex = 12;
             this.report.Text = "";
->>>>>>> Stashed changes
             // 
             // Form1
             // 
@@ -631,11 +525,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picture_bird)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_shrek)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_lion)).EndInit();
-<<<<<<< Updated upstream
-            this.action_box.ResumeLayout(false);
-            this.action_box.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-=======
             this.first_player_box.ResumeLayout(false);
             this.first_player_box.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_def_icon)).EndInit();
@@ -645,7 +534,6 @@
             this.action_box.ResumeLayout(false);
             this.action_box.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picture_dice)).EndInit();
->>>>>>> Stashed changes
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -681,11 +569,6 @@
         private System.Windows.Forms.Label count_label;
         private System.Windows.Forms.Label label_round_action;
         private System.Windows.Forms.TextBox player_name_text;
-<<<<<<< Updated upstream
-        private System.Windows.Forms.ListBox report;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button_roll;
-=======
         private System.Windows.Forms.PictureBox picture_dice;
         private System.Windows.Forms.Button button_roll;
         private System.Windows.Forms.Label label_point;
@@ -695,6 +578,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label_point2;
         private System.Windows.Forms.RichTextBox report;
->>>>>>> Stashed changes
     }
 }
+
